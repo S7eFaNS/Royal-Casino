@@ -1,0 +1,23 @@
+.navbar {
+    background-color: #4f1098;
+  }
+  
+  .navbar-brand {
+    color: #fff;
+    font-size: 24px;
+  }
+
+  .nav-link {
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+  }
+  
+  .btn-outline-light:hover {
+    background-color: #fff;
+    color: #000;
+  }

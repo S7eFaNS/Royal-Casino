@@ -1,0 +1,9 @@
+.selected-row {
+  background-color: rgb(158, 67, 197) !important;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.table {
+  --bs-table-bg: rgba(255, 255, 255, 0.5);
+}

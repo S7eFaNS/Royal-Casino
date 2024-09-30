@@ -1,0 +1,26 @@
+# Disable the Gradle daemon for Continuous Integration servers as correctness
+# is usually a priority over speed in CI environments. Using a fresh
+# runtime for each build is more reliable since the runtime is completely
+# isolated from any previous builds.
+variables:
+  GRADLE_OPTS: "-Dorg.gradle.daemon=false"
+stages:
+  - build
+  - test
+  
+build:
+  stage: build
+  script:
+    - cd  semester3_Java
+    - ./gradlew assemble
+test:
+  stage: test
+  script:
+    - cd semester3_Java
+    - ./gradlew test
+
+sonar:
+  stage: test
+  script:
+    - cd semester3_Java
+    - ./gradlew test sonar

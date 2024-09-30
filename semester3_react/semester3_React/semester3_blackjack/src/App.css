@@ -1,0 +1,53 @@
+:root{
+  --mainOpacity: rgba(0, 0, 0, 0.55);
+}
+
+
+
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.35);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main-color {
+  background-color: #4f1098 ;
+  }
+
+.col-image-left {
+  background-image: url("./images/casino_background.jpeg");
+  height: 25em !important;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+
+.col-image-right {
+  background-image: url("./images/dragon_lore_background.jpg");
+  height: 25em !important;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+
+.lost-image {
+  background-image: url("./images/m4a4_howl.PNG");
+  height: 25em !important;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+
+.homepage-carousel-title {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.inactiveLink {
+  pointer-events: none;
+  cursor: default;
+}
